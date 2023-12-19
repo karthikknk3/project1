@@ -1,0 +1,9 @@
+---
+- name: second playbook
+  hosts: all
+  tasks:
+  - name: Copying shell script to targets
+    ansible.builtin.copy:
+      src: /root/project1/firstfile.sh
+      dest: /root/firstfile.sh
+
